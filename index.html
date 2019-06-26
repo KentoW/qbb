@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Query-by-Blending</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="noindex,nofollow,noarchive" />
+        <link href="css/app.css?hoge" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div id="paper_title">Query-by-Blending: A Music Exploration System Blending Latent Vector Representations of Lyric Word, Song Audio, and Artist</div>
+        </div>
+        <div id="info">
+            <div id="author">Kento Watanabe and Masataka Goto</div>
+            <div id="affiliation">National Institute of Advanced Industrial Science and Technology (AIST), Japan</div>
+            <div id="proc">the 20th annual conference of the International Society for Music Information Retrieval (ISMIR)</div>
+        </div>
+        <div id="container">
+            <div id="tabs">
+                <div id="tab1" class="tab on">Figure 2-1</div>
+                <div id="tab2" class="tab">Figure 2-2</div>
+                <div id="tab3" class="tab">Figure 3</div>
+                <div id="tab4" class="tab">Figure 4</div>
+                <div id="tab5" class="tab">Table 1</div>
+            </div>
+            <div id="contents">
+                <div class="content" id="content1">
+                    <img class="int_img" src="./img/figure2-1.png"></img>
+                    <div class="caption">
+                        The left part of Figure 2. Query-by-Blending enables the exploration of three musical aspects: lyric word, song audio, and artist.
+                    </div>
+                    <h3>Audio Examples</h3>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/71/b8/e8/mzm.xuxvytdc.aac.p.m4a">Wake Up</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/55/30/d5/5530d501-4949-c7ba-a416-f6939f7af2c3/mzaf_5786765905807597758.plus.aac.p.m4a">Baby Won't You Please Come Home</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview30/v4/e1/25/2c/e1252c78-7d0b-2e88-42a5-5f0480c3b5e1/mzaf_2345139764857796975.plus.aac.p.m4a">Somewhere over the Rainbow</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/35/06/cc/mzm.zusckpzb.aac.p.m4a">Angel Band</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/c6/a3/13/mzm.ysnwhwac.aac.p.m4a">Familiar Love</div>
+                </div>
+                <div class="content" id="content2">
+                    <img class="int_img" src="./img/figure2-2.png"></img>
+                    <div class="caption">
+                        The right part of Figure 2. Query-by-Blending enables the exploration of three musical aspects: lyric word, song audio, and artist.
+                    </div>
+                    <h3>Audio Examples</h3>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/e4/75/2c/mzi.wogxubac.aac.p.m4a">Satellites</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/ec/5c/e1/ec5ce1d9-ee75-f525-abca-e0e14c5aa946/mzaf_3045619252999892466.plus.aac.p.m4a">Baby Baby</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/66/3d/d9/mzm.wedjtsjh.aac.p.m4a">You'll Never Find (A Better Woman)</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/a4/0a/2d/a40a2dd5-0178-0896-e3f2-dce7b24cfa68/mzaf_4527080759777958590.plus.aac.p.m4a">Come Crashing</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/38/46/0e/38460e7d-2c55-2817-6d46-1ee2ee3028d4/mzaf_3841412992454342317.plus.aac.p.m4a">In Your Life</div>
+                </div>
+                <div class="content" id="content3">
+                    <img class="int_img" src="./img/figure3.png"></img>
+                    <div class="caption">
+                        Figure 3. By blending multiple flavors, Query-by-Blending can display music content similar to the blended flavor. The blended flavor "snow + Lady GaGa" is similar to Christmas, Pop, and Soul songs/artists.
+                    </div>
+                    <h3>Audio Examples</h3>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/d1/c4/5c/mzm.rrogvqga.aac.p.m4a">How Do You Love Someone?</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/f9/6b/da/mzm.debyykiy.aac.p.m4a">Waste My Time (feat. L.O.)</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/38/46/0e/38460e7d-2c55-2817-6d46-1ee2ee3028d4/mzaf_3841412992454342317.plus.aac.p.m4a">In Your Life</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music5/v4/19/c4/b1/19c4b1a1-6815-0df2-2fd6-1a7547e76dfa/mzaf_5560632014705938366.plus.aac.p.m4a">Breathe Slow (Single Version)</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/b8/cc/99/b8cc9903-81fa-642c-9bec-c97aa1a8500c/mzaf_7446314688128730809.plus.aac.p.m4a">Santa Claus Is Coming To Town</div>
+                </div>
+                <div class="content" id="content4">
+                    <img class="int_img" src="./img/figure4.png"></img>
+                    <div class="caption">
+                        Figure 4. Query-by-Blending allows the user to subtract flavors from others. The flavor "Lady GaGa - Countdown (Pop song)" is similar to Alternative and Rock songs/artists.
+                    </div>
+                    <h3>Audio Examples</h3>
+                    <div><b>Input Audio</b></div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/32/58/8c/mzi.jfdkdosc.aac.p.m4a">Countdown</div>
+                    <br>
+                    <div><b>Output Audio</b></div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/dc/29/57/dc29573b-79b6-0d5e-a07d-e00bf15141b9/mzaf_1044328219351334973.plus.aac.p.m4a">Letterbox</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/01/de/a3/mzm.rrnrxapy.aac.p.m4a">Some Are Born</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/75/69/b7/7569b791-b3f7-64fb-f413-00041fba8e88/mzaf_117837954272116121.plus.aac.p.m4a">I Want Your Love (2Xs Radio)</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/bb/45/4a/bb454a28-8356-969c-0127-b7f819a953cb/mzaf_6423292246318026166.plus.aac.p.m4a">Aisy Waisy</div>
+                    <div class="fig_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/cd/c1/82/mzm.xvhcqxjh.aac.p.m4a">Free (Interface Mix)</div>
+                </div>
+                <div class="content" id="content5">
+                    <div id="table">
+                        <div id="label_x">Input word/song/artist flavor</div>
+                        <div id="label_y">
+                            <div id="label_sim_artist">Similar artists</div>
+                            <div id="label_sim_song">Similar songs</div>
+                            <div id="label_sim_word">Similar words</div>
+                        </div>
+                        <div id="col_word">
+                            <div class="col_head">word: death</div>
+                            <div class="col_item">
+                                <div class="col">blood</div>
+                                <div class="col">dead</div>
+                                <div class="col">flesh</div>
+                                <div class="col">reborn</div>
+                                <div class="col line">mortal</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/2e/92/db/mzm.xtdmdjdo.aac.p.m4a">Burning Sermon</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/ac/a5/c4/aca5c477-b6da-ef83-da50-7f6c1a218b65/mzaf_9203985530639178821.plus.aac.p.m4a">Neuro Osmosis</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/c8/dd/22/c8dd2299-a8c9-efee-4ffb-b3ddf696e5c0/mzaf_5651811195426233228.plus.aac.p.m4a">Scraping the Barrel</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/42/14/23/4214238d-12f7-a7f6-76ea-23d36272aa99/mzaf_1794418733225657698.plus.aac.p.m4a">Coins Upon the Eyes</div>
+                                <div class="col col_audio line" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/d8/81/0c/mzm.qganqktc.aac.p.m4a">The Harlot Ov the Saints</div>
+                                <div class="col">Gary Numan</div>
+                                <div class="col">L'Âme Immortelle</div>
+                                <div class="col">Cowboy Junkies</div>
+                                <div class="col">Don Moen</div>
+                                <div class="col">Savatage</div>
+                            </div>
+                            <div class="col_value">
+                                <div class="col">0.70</div>
+                                <div class="col">0.65</div>
+                                <div class="col">0.65</div>
+                                <div class="col">0.63</div>
+                                <div class="col line">0.62</div>
+                                <div class="col">0.49</div>
+                                <div class="col">0.48</div>
+                                <div class="col">0.48</div>
+                                <div class="col">0.47</div>
+                                <div class="col line">0.47</div>
+                                <div class="col">0.40</div>
+                                <div class="col">0.39</div>
+                                <div class="col">0.38</div>
+                                <div class="col">0.38</div>
+                                <div class="col">0.37</div>
+                            </div>
+                        </div>
+                        <div id="col_song">
+                            <div class="col_head col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/f6/af/f1/mzi.cqzuaidl.aac.p.m4a">song: Amazing Grace</div>
+                            <div class="col_item">
+                                <div class="col">may</div>
+                                <div class="col">sadly</div>
+                                <div class="col">gentle</div>
+                                <div class="col">meadow</div>
+                                <div class="col line">lullaby</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/24/9c/e2/249ce2d5-0c74-bafd-a838-da6d6313a4f0/mzaf_8876878045314746015.plus.aac.p.m4a">I Wish I Was In England</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music49/v4/eb/0e/c7/eb0ec7c0-96b2-4e6c-abc2-69ab4bc42c4e/mzaf_697304800039587250.plus.aac.p.m4a">North Country Maid</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/fe/1b/4c/fe1b4ccd-920d-5910-5178-fe08be3ff664/mzaf_2257138156239622322.plus.aac.p.m4a">Mary, Did You Know</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/3f/ba/a6/mzm.hvgiylki.aac.p.m4a">No Turning Back</div>
+                                <div class="col col_audio line" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/0d/b7/ce/0db7ce62-6d67-d551-a33d-573ba42ae3ab/mzaf_72643749453826054.plus.aac.p.m4a">Beloved</div>
+                                <div class="col">Barbra Streisand</div>
+                                <div class="col">Ella Fitzgerald</div>
+                                <div class="col">Linda Ronstadt</div>
+                                <div class="col">Debby Boone</div>
+                                <div class="col">Nana Mouskouri</div>
+                            </div>
+                            <div class="col_value">
+                                <div class="col">0.37</div>
+                                <div class="col">0.35</div>
+                                <div class="col">0.34</div>
+                                <div class="col">0.34</div>
+                                <div class="col line">0.34</div>
+                                <div class="col">0.85</div>
+                                <div class="col">0.84</div>
+                                <div class="col">0.83</div>
+                                <div class="col">0.83</div>
+                                <div class="col line">0.83</div>
+                                <div class="col">0.40</div>
+                                <div class="col">0.39</div>
+                                <div class="col">0.38</div>
+                                <div class="col">0.37</div>
+                                <div class="col">0.35</div>
+                            </div>
+                        </div>
+                        <div id="col_artist">
+                            <div class="col_head">artist: Michael Jackson</div>
+                            <div class="col_item">
+                                <div class="col">hypnotized</div>
+                                <div class="col">maurice</div>
+                                <div class="col">babygirl</div>
+                                <div class="col">confused</div>
+                                <div class="col line">emotions</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview117/v4/57/dc/43/57dc439e-0a1b-d422-e050-f1d9cd082ec6/mzaf_4259526527586359518.plus.aac.p.m4a">It's a Man's Man's Man's World</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/2d/ba/cb/2dbacb34-2f21-edd5-46a3-ece7f09adb0a/mzaf_6786205225484750497.plus.aac.p.m4a">Tight</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/81/b4/89/81b4894b-e3ef-2288-0ab5-ad5ef2be5005/mzaf_3795348031395593617.plus.aac.p.m4a">Play with Bootsy (feat. Kelli Ali)</div>
+                                <div class="col col_audio" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/95/3e/71/mzm.rszrtvlb.aac.p.m4a">Unspeakable</div>
+                                <div class="col col_audio line" url="https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music3/v4/e1/68/8f/e1688fa4-0e6f-9332-2d11-5b75d7aede47/mzaf_5501581966717719789.plus.aac.p.m4a">Dead Heat</div>
+                                <div class="col">Janet Jackson</div>
+                                <div class="col">Sarah Connor</div>
+                                <div class="col">Luther Vandross</div>
+                                <div class="col">Kylie Minogue</div>
+                                <div class="col">Faith Evans</div>
+                            </div>
+                            <div class="col_value">
+                                <div class="col">0.41</div>
+                                <div class="col">0.40</div>
+                                <div class="col">0.39</div>
+                                <div class="col">0.39</div>
+                                <div class="col line">0.39</div>
+                                <div class="col">0.50</div>
+                                <div class="col">0.49</div>
+                                <div class="col">0.48</div>
+                                <div class="col">0.48</div>
+                                <div class="col line">0.48</div>
+                                <div class="col">0.61</div>
+                                <div class="col">0.52</div>
+                                <div class="col">0.52</div>
+                                <div class="col">0.52</div>
+                                <div class="col">0.51</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
